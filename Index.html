@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tare 3</title>        
+    
+	<!-- Enlace a biblioteca JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	
+   <!-- Enlace a hoja CSS de Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    
+    <!-- Enlace a biblioteca JavaScript de Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>  
+		
+	<!-- Enlace a leaflet-providers -->  
+    <script src="js/leaflet-providers.js"></script>    
+
+	<!-- Enlace a kit de Font Awesome -->
+	<script src="https://kit.fontawesome.com/a8c652eb65.js" crossorigin="anonymous"></script>
+	
+	<!-- Enlace a complemento Leaflet-choropleth -->
+    <script src="js/choropleth.js"></script> 
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<h1>Sitios Arqueológicos Obras Hidraulicas</h1>  
+	<h2>Todos los sitios arqueológicos con obras hidráulicas, conocidos hasta ahora en el territorio costarricense, se ubican en la Región climática Caribe Norte. El Caribe costarricense es una zona con una alta pluviosidad. 
+		El régimen de esta vertiente no presenta una estación seca definida, pues las lluvias se mantienen entre los 100 y 200 mm en los meses menos lluviosos, lo cual es una cantidad de lluvia considerable. Así, existe un rango entre los 2500-4500 mm por año; con una precipitación promedio de 3300 mm anuales (Instituto Metereológico Nacional, 2016). 
+		A la vez, en el Caribe de Costa Rica no solo abunda el agua en forma de lluvia, también como recurso fluvial con una red hidrográfica compuesta por al menos 10 ríos de caudal importante (Peytrequin y Arce, 2016:2).</h2>
+    
+	<a href="https://github.com/tpb729-desarrollosigweb-2021/ejemplo-mapa-leaflet-coropletas">Código fuente</a>
+    <p>
+	
+    <!-- Elemento div para contener el mapa Leaflet -->
+    <div id="mapid"></div>
+
+    <!-- Código JavaScript para generar y manejar el mapa Leaflet -->
+    <script src="js/scripts.js"></script>
+</div>	
+
+        <div class="column">
+            <!-- Controles para la opacidad de la capa de precipitación -->
+            <h5>Opacidad de la capa de precipitación: <span id="span-opacity-prec">0.5</span></h5>
+            <input type='range' id='sld-opacity-prec' min='0' max='1' step='0.1' value='0.5' onchange='updateOpacityPrec();'>
+        </div>
+    </div>
+	
+</body>
+</html>
